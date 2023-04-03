@@ -1,0 +1,354 @@
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+
+.navbox
+{
+    width:100vw;
+    background-color: rgb(67, 6, 98);
+
+    display: none;
+
+    
+}
+
+.navbox p
+{   font-size:3vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: white;
+}
+
+
+
+
+.landing
+{
+    position: relative;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-size: cover;
+
+    
+}
+
+
+.landing p
+{
+    position: absolute;
+
+    top:13%;
+
+    left:30%;
+
+    font-size: 3rem;
+
+    color:white;
+
+}
+
+
+.landing button
+{
+    all:unset;
+    position: absolute;
+    bottom:15%;
+    background-color: azure;
+    width:10%;
+    height: 7%;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+.landing button:hover
+{
+    background-color: bisque;
+
+    transform: scale(1.1);
+
+
+}
+
+
+
+
+
+.board
+{
+
+
+    width:100vw;
+    height: 100vh;
+}
+
+
+
+
+.game-container
+{
+
+
+    width: 100vw;
+    height: 100vh;
+     display: none;
+     justify-content: center;
+    align-items: center;
+
+    gap:5vw;
+  
+
+ 
+  
+
+
+}
+
+
+.game-box
+{
+
+
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+}
+
+
+
+
+
+
+.box
+{
+
+    border: 2px solid black;
+    cursor: pointer;
+
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.box:hover
+{
+
+    background-color: rgb(243, 235, 243);
+}
+
+
+
+
+.br-l
+{
+
+    border-left:none;
+}
+
+.br-r
+
+{
+
+    border-right: none;
+}
+
+
+.br-b
+{
+
+    border-bottom: none;
+}
+.br-t
+{
+
+    border-top: none;
+}
+
+
+.info p
+{
+
+    font-size: 3vw;
+    
+}
+
+
+.rebtn
+{
+    font-size: 1.7vw;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: azure;
+}
+
+
+.excited
+{
+    transform: scale(0);
+}
+
+
+
+
+
+@media(width<=600px) {
+
+    .game-container
+    {
+        flex-direction: column;
+        gap:7vw;
+
+        margin-top: 7vw;
+        
+    }
+
+
+
+    .game-box
+{
+
+
+    grid-template-columns: repeat(3,20vw);
+    grid-template-rows: repeat(3,20vw);
+}
+
+
+
+.info p
+{
+
+    font-size: 5vw;
+    
+}
+
+
+
+.rebtn
+{
+    font-size: 2.2vw;
+    padding: 13px;
+    margin-left: 23px;
+    margin-top: 10px;
+    border-radius: 6px;
+   
+}
+
+
+
+    
+}
+
+
+/* media query for landing page */
+
+@media(max-width:950px) {
+
+
+    .landing p
+    {
+      
+    
+        top:13%;
+    
+        left:20%;
+    
+        font-size: 2.6rem;
+    
+    
+    }
+
+
+    .landing button
+{
+ 
+   
+
+     width:20%;
+     min-width:200px;
+    height: 10%;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.4rem;
+ 
+
+
+}
+
+
+
+
+   
+    
+}
+
+
+@media(max-width:670px) {
+
+
+    .landing p
+    {
+      
+    
+        top:13%;
+    
+        left:11%;
+    
+        font-size: 2rem;
+    
+     
+    
+    }
+   
+    
+}
+
+
+
+@media(max-width:450px) {
+
+
+    .landing p
+    {
+      
+    
+        top:13%;
+    
+        left:10%;
+    
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+    
+     
+    
+    }
+   
+    
+}
+
+
+
+
+
+
+
